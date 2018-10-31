@@ -225,6 +225,15 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
+section#portfolio {
+  background-color: white;
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
 #portfolio .portfolio-item {
   right: 0;
   margin: 0 0 15px;
@@ -274,6 +283,7 @@ header.masthead .intro-text .intro-heading {
 
 #portfolio .portfolio-item .portfolio-caption {
   max-width: 400px;
+  height: 160px;
   margin: 0 auto;
   padding: 25px;
   text-align: center;
@@ -282,6 +292,7 @@ header.masthead .intro-text .intro-heading {
 
 #portfolio .portfolio-item .portfolio-caption h4 {
   margin: 0;
+  padding-bottom: 10px;
   text-transform: none;
 }
 
@@ -414,15 +425,6 @@ section#other-works {
   padding-bottom: 50px;
 }
 
-/*.gallery img {
-  filter: grayscale(70%);
-  transition: 0.5s;
-}
-
-.gallery img:hover {
-  filter: grayscale(0%);
-  transform: scale(1.05);
-}*/
 
 .gallery.compact-gallery .item {
   overflow: hidden;
@@ -431,8 +433,8 @@ section#other-works {
   opacity: 1;
 }
 
-.gallery.compact-gallery .item .images {
-  transition: 0.8s easy;
+.gallery.compact-gallery .item .image {
+  filter:grayscale(50%);
 }
 
 .gallery.compact-gallery .item .info {
@@ -452,21 +454,36 @@ section#other-works {
   padding-top: 16px;
   padding-bottom: 16px;
   opacity: 1;
-  transition: 0.8s easy;
   text-align: center;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.39));
 }
 
 .gallery.compact-gallery .item .description .description-heading {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: bold;
 }
 
 .gallery.compact-gallery .item .description .description-body {
-  font-size: 12px;
+  font-size: 11px;
   margin-top: 10px;
   font-style: italic;
+}
+
+@media(min-width:576px) {
+  .gallery.compact-gallery .item .description {
+    opacity: 0;
+  }
+  .gallery.compact-gallery .item .description:hover {
+    opacity: 1;
+    transition: 0.5s;
+  }
+  .gallery .zoom-on-hover:hover .image {
+    filter:grayscale(0%);
+    transform: scale(1.1);
+    opacity: 0.4;
+    transition: 0.5s;
+  }
 }
 
 section#contact {
