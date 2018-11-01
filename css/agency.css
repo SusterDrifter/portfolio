@@ -470,7 +470,7 @@ section#other-works {
   opacity: 1;
   text-align: center;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.39));
+  background: linear-gradient(to bottom, transparent, rgba(105, 105, 105, 0.39));
 }
 
 .gallery.compact-gallery .item .description .description-heading {
