@@ -227,11 +227,16 @@ header.masthead .intro-text .intro-heading {
 
 section#portfolio {
   background-color: white;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/portfolio-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+}
+
+#portfolio h3 {
+  color: #1b1c1c;
+  font-size: 20px;
 }
 
 #portfolio .portfolio-item {
@@ -434,7 +439,7 @@ section#other-works {
 }
 
 .gallery.compact-gallery .item .image {
-  filter:grayscale(50%);
+  filter:grayscale(60%);
 }
 
 .gallery.compact-gallery .item .info {
@@ -468,6 +473,7 @@ section#other-works {
   font-size: 11px;
   margin-top: 10px;
   font-style: italic;
+  color: #d1d3d3;
 }
 
 @media(min-width:576px) {
@@ -481,7 +487,7 @@ section#other-works {
   .gallery .zoom-on-hover:hover .image {
     filter:grayscale(0%);
     transform: scale(1.1);
-    opacity: 0.4;
+    opacity: 0.6;
     transition: 0.5s;
   }
 }
