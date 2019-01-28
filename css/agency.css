@@ -194,6 +194,7 @@ header.masthead .intro-text {
 }
 
 header.masthead .intro-text .intro-lead-in {
+  color: #c4c4c4;
   font-size: 22px;
   font-style: italic;
   line-height: 22px;
@@ -512,6 +513,11 @@ section#contact .section-heading {
   color: #fff;
 }
 
+section#contact .section-details {
+  color: #c4c4c4;   
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
 section#contact .form-group {
   margin-bottom: 25px;
 }
@@ -622,4 +628,5 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     padding-bottom: 20px;
     list-style-type: square;
 }
+
 
